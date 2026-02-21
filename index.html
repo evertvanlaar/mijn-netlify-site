@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Netlify Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welkom op mijn TEST-site! 🚀</h1>
+        <p class="tagline">Deze site heb ik gedeployed met Netlify</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Over Mij</h2>
+            <p>Dit is mijn eerste website op Netlify. Ik ben aan het leren hoe ik websites kan deployen!</br>Rete interessant 😎</p>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>⚡ Snel</h3>
+                <p>Netlify deployment is razendsnel</p>
+            </div>
+            <div class="feature">
+                <h3>🔒 Veilig</h3>
+                <p>Gratis SSL inbegrepen</p>
+            </div>
+            <div class="feature">
+                <h3>🌐 Wereldwijd</h3>
+                <p>CDN voor snelle toegang overal</p>
+            </div>
+        </section>
+
+        <section class="update-demo">
+            <h2>✏️ Update Demo</h2>
+            <p id="counter">Klik de knop om te zien hoe live updates werken!</p>
+            <button onclick="updateCounter()">Update mij</button>
+            <p class="hint">Tip: Pas deze tekst aan en push naar Git om de site te updaten!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Gemaakt door Evert met ❤️ en Netlify</p>
+    </footer>
+
+    <script>
+        let count = 0;
+        function updateCounter() {
+            count++;
+            document.getElementById('counter').textContent = `Je hebt ${count} keer geklikt! 🌟`;
+        }
+    </script>
+</body>
+</html>

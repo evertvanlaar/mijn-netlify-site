@@ -1,0 +1,105 @@
+/* Netlify Training Demo - Styles */
+
+:root {
+    --primary: #00AD9F;
+    --secondary: #292929;
+    --bg: #fafafa;
+    --text: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+}
+
+header {
+    background: var(--secondary);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-bottom: 0.5rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.feature {
+    text-align: center;
+    padding: 1rem;
+}
+
+.update-demo {
+    text-align: center;
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #008b7f;
+}
+
+.hint {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}
